@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.min.css">
+</head>
+
+<body>
+
+    <header class="header header--bg-color" style="background-image: url(../img/header-bg-cover.jpg);">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo"><a href="../"><img src="../img/logo.png" alt=""></a></div>
+                <ul class="menu">
+                    <li class="menu__list-item"><a href="#">How it works</a></li>
+                    <li class="menu__list-item"><a href="#">Security</a></li>
+                    <li class="menu__list-item"><a href="#">FAQ</a></li>
+                    <li class="menu__list-item"><a href="#">Support</a></li>
+                    <li class="menu__list-item"><a href="#">Download the app</a></li>
+                </ul>
+                <div class="order-btn"><a href="#">Order Now!</a></div>
+            </div>
+        </div>
+    </header>
+    <section class="answers">
+        <div class="container">
+            <div class="answers__content" style="background-image: url(../img/question_marks-decoration.svg);">
+                <div class="answer__list">
+                    <h1 class="answers__title">
+                        Looking For An Answer?
+                    </h1>
+                    <div class="answers__item">
+                        <div class="answers__item-question">How do I use my DiceKey with a password manager?</div>
+                        <div class="answers__item-answer">
+                            For now, you can scan your DiceKey into the DiceKeys app and use the app to generate the
+                            'master' password for your password manager. You can copy and paste it into your password
+                            manager.
+                            We also offer an API that allows password manager apps to request your master password from
+                            the
+                            DiceKeys app, or even request a cryptographic key that will make your master password
+                            entirely
+                            unnecessary.
+                        </div>
+                    </div>
+                    <div class="answers__item">
+                        <div class="answers__item-question">How do I use my DiceKey to seed a SoloKey?</div>
+                        <div class="answers__item-answer">
+                            You scan your DiceKey into the DiceKeys app, choose the "Seed SoloKey" option, and follow
+                            the instructions. (This currently only works on the Android and MacOS apps as iOS apps are
+                            not permitted to write to USB devices.)
+                        </div>
+                    </div>
+                    <div class="answers__item">
+                        <div class="answers__item-question">Do DiceKeys work with any SoloKey?</div>
+                        <div class="answers__item-answer">No. Make sure you get purchase one that is DiceKeys
+                            compatible.</div>
+                    </div>
+                    <div class="answers__item">
+                        <div class="answers__item-question">How do you reduce the risk the app will read my DiceKey
+                            incorrectly?</div>
+                        <div class="answers__item-answer">The letter and digit on each die are also encoded a second
+                            time into the binary code in the underline, and a third time into the overline. The DiceKeys
+                            app checks the letter and digit once against the encoding in the underline and again using
+                            the underline.</div>
+                    </div>
+                    <div class="answers__item">
+                        <div class="answers__item-question">What is your privacy policy?</div>
+                        <div class="answers__item-answer">We don't have a policy about the data collected by our app and
+                            website. That's because we don't collect any data. We don't have a server for our app to
+                            contact because its designed to run entirely without access to a network.
+                            We also won't ask you to rate our app. We're not selling apps.
+                            If you ask us for support and want us to respond to you, we're going to be collecting
+                            information to contact you, and the service we use for support may collect data as disclosed
+                            on their website.
+                        </div>
+                    </div>
+                    <div class="answers__item">
+                        <div class="answers__item-question">What are Stickeys</div>
+                        <div class="answers__item-answer">Stickeys are a way to backup DiceKeys. Each kit comes with 150
+                            stickers (one for each die face). You backup your DiceKey by building a 5x5 grid of stickers
+                            that matches your DiceKey.</div>
+                    </div>
+                    <div class="answers__item">
+                        <div class="answers__item-question">Are you making a metal version?</div>
+                        <div class="answers__item-answer">We are planning to in the future. We will likely use two-sided
+                            metal chips (similar to Stickeys) to achieve a relatively flat form factor.</div>
+                    </div>
+                    <div class="answers__item">
+                        <div class="answers__item-question">Can I re-open my DiceKey to change the key?</div>
+                        <div class="answers__item-answer">Not easily, and you might break it if you try. In our design,
+                            we prioritized making it hard for the dice to accidentally come out of arrangement over
+                            making it easy to re-arrange them.</div>
+                    </div>
+                    <div class="answers__item">
+                        <div class="answers__item-question">Can I read my DiceKey without a camera</div>
+                        <div class="answers__item-answer">Yes. It's just the letter, digit, and orientation of each die.
+                        </div>
+                    </div>
+                    <div class="answers__item">
+                        <div class="answers__item-question">What happens if I scan my key when at a different
+                            orientation?</div>
+                        <div class="answers__item-answer">The die in the top left corner when you scan your DiceKey once
+                            may be in a different corner the next time you scan it. No problem! The DiceKeys app orients
+                            your DiceKey before generating passwords and keys so that it doesn't matter which corner is
+                            the top left. (This is why the security strength is 196 bits, not 198 bits.)</div>
+                    </div>
+                    <div class="answers__item">
+                        <div class="answers__item-question">What if I don't want to lock my dice in place?</div>
+                        <div class="answers__item-answer">We have produced lids that don't lock. We're still finding a
+                            way to distribute them since Crowd Supply declined to offer them.</div>
+                    </div>
+                    <div class="answers__item">
+                        <div class="answers__item-question">Can I print my DiceKey?</div>
+                        <div class="answers__item-answer">You could, but that could be risky your printer is not
+                            properly secured or the network you use to connect to it is vulnerable. Stickeys allow you
+                            to replicate your DiceKey without relying on a printer to be secure.</div>
+                    </div>
+                    <div class="answers__item">
+                        <div class="answers__item-question">What open-source license do you use?</div>
+                        <div class="answers__item-answer">Our software is available under the MIT license. It allows us
+                            to license the software without licensing the DiceKeys software without the patents needed
+                            to produce DiceKeys hardware.</div>
+                    </div>
+                    <div class="answers__item">
+                        <div class="answers__item-question">Is the DiceKeys hardware patented?</div>
+                        <div class="answers__item-answer">Yes. We have filed a patent (pending) for the exclusive
+                            purpose of protecting the right to produce DiceKeys hardware (including Stickeys).
+                            When you purchase a DiceKey, you pay an up-front cost with no hidden subscriptions or
+                            up-sells. While other businesses are built around turning customers into recurring revenue
+                            streams, we've invested in designing a product that's meant to last your lifetime. The
+                            hardware is 100% yours and the software is open source to ensure your rights to use it never
+                            expire.
+                            We are taking an authentication product to market at a time when the five largest US
+                            companies by market capitalization all play the role of identity providers, and even the
+                            "smaller" companies focused solely on authentication products are raising tens to hundreds
+                            of millions of dollars (each!) from venture capitalists.
+                            Patenting prevents free-loaders from draining the revenue stream that will continue to fund
+                            the open-source software DiceKeys rely upon. Patenting gives us a fighting chance to see a
+                            return on our significant investment of time and money. Patenting also empowers us to
+                            require that licensees meet standards for product quality, labor, and environmental impact
+                            -- preventing a race to the bottom in which the winning strategy is to abandon all such
+                            concerns.
+                        </div>
+                    </div>
+                    <div class="answers__item">
+                        <div class="answers__item-question">Why is there no Q die?</div>
+                        <div class="answers__item-answer">
+                            Imagine a game of musical chairs with 26 uppercase letters but only 25 dice for them to sit
+                            on. Now imagine one of those letters has a vestigial tail, which makes it harder to sit.
+                            That tail of a Q extends below the font's baseline. To accommodate the Q, every die would
+                            need to use a smaller font, making all letters and digits harder to read.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="container">
+            <div class="contact__content">
+                <div class="contact__title">Still got questions?</div>
+                <form class="contact__form">
+                    <div class="contact__form-title">Contact us</div>
+                    <div class="contact__form-input-title">Full Name <span>*</span></div>
+                    <input class="contact__form-input" type="text">
+                    <div class="contact__form-input-title">Email <span>*</span></div>
+                    <input class="contact__form-input" type="text">
+                    <div class="contact__form-input-title">Your question</div>
+                    <textarea class="contact__form-input"></textarea>
+                    <button class="contact__form-btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__license">© 2021 DiceKeys LLC All Right Reserved</div>
+                <ul class="footer__menu">
+                    <li class="footer__menu-list-item"><a href="#">Benefit</a></li>
+                    <li class="footer__menu-list-item"><a href="#">Pricing</a></li>
+                    <li class="footer__menu-list-item"><a href="#">Testimonials</a></li>
+                    <li class="footer__menu-list-item"><a href="#">Clients</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.answers__item-question').forEach((item) =>
+            item.addEventListener('click', () => {
+                item.parentNode.classList.toggle('active');
+            })
+        )
+    </script>
+    <script src="../js/main.min.js"></script>
+</body>
+
+</html>
