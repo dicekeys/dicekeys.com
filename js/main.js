@@ -1,7 +1,35 @@
-
 document.addEventListener('DOMContentLoaded', () => {
 
-    if (document.querySelector('#home')) { // what`s page
+    function allSite() {
+        const menuBtn = document.querySelector('.menu-btn');
+        const menu = document.querySelector('.menu');
+
+        menuBtn.addEventListener('click', () => {
+            menuBtn.classList.toggle('active');
+            menu.classList.toggle('active');
+            if (!menuBtn.classList.contains('active')) {
+                menuBtn.classList.add('holder');
+            } else {
+                menuBtn.classList.remove('holder');
+            }
+        });
+
+    };
+
+    function pageHome() {
+        const anchorsLink = document.querySelectorAll('a.menu__list-item--anchor');
+
+        anchorsLink.forEach((item) => {
+            item.addEventListener('click', function (e) {
+                e.preventDefault()
+                const blockID = item.getAttribute('href')
+                document.querySelector(blockID).scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                })
+            })
+        });
+
         const presentationItem = document.querySelectorAll('.header__presentation-instruction-item');
         const presentation = document.querySelectorAll('.presentation');
         const presentationTitle = document.querySelector('.header__presentation-title');
@@ -25,13 +53,9 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         ];
 
-
         function chooseBlockImageAndAcordeons(textlist, imagelist, title, settingTitle, activeElement) {
-
             textlist.forEach((item, idx) => {
-
                 item.addEventListener('click', () => {
-
                     textlist.forEach((other, idx) => {
                         if (other !== item) {
                             other.classList.remove("active");
@@ -40,7 +64,6 @@ document.addEventListener('DOMContentLoaded', () => {
                         }
                         return;
                     });
-
                     imagelist[idx].classList.add("active");
                     title.innerHTML = settingTitle[idx].title;
                     item.classList.add("active");
@@ -50,75 +73,30 @@ document.addEventListener('DOMContentLoaded', () => {
             imagelist[activeElement].classList.add("active");
             title.innerHTML = settingTitle[activeElement].title;
             textlist[activeElement].classList.add("active");
-
         };
 
-        chooseBlockImageAndAcordeons(presentationItem, presentation, presentationTitle, settingTitle,3);
-
-  
-
-            $('.quotes__slider-content').slick({
-                dots: true,
-                slidesToShow: 2,
-                slidesToScroll: 1,
-                prevArrow: '<button type="button" class="slick-btn slick-prev">Previous</button>',
-                nextArrow: '<button type="button" class="slick-btn slick-next">Previous</button>'
-            });
-
-     
-
-        //https://github.com/ganlanyuan/tiny-slider
-        // http://ganlanyuan.github.io/tiny-slider/demo/
-        // var slider = tns({
-        //     items: 2,
-        //     container: "#slider_home",
-        //     speed: 400
-        // });
-
-
-    
+        chooseBlockImageAndAcordeons(presentationItem, presentation, presentationTitle, settingTitle, 3);
     };
 
-
-
-
-    if (document.querySelector('#faq')) {
-        console.log('fack')
+    function pageFaq() { 
         document.querySelectorAll('.answers__category-title').forEach((item) =>
-            item.addEventListener('click', () => item.parentNode.classList.toggle('active'))
+            item.addEventListener('click', () => { 
+                item.parentNode.classList.toggle('active');
+            })
         )
-
         document.querySelectorAll('.answers__item-question').forEach((item) =>
             item.addEventListener('click', () => item.parentNode.classList.toggle('active'))
         )
-    }
+    };
 
+    function pageSequrity() { };
 
-    if (document.querySelector('#security')) {
+    function pageSupport() { };
 
-    }
-
-
-
-    $(".menu__list-item--anchor").on("click", "a", function (event) {
-        //отменяем стандартную обработку нажатия по ссылке
-        event.preventDefault();
-
-        //забираем идентификатор бока с атрибута href
-        var id = $(this).attr('href'),
-
-            //узнаем высоту от начала страницы до блока на который ссылается якорь
-            top = $(id).offset().top;
-
-        //анимируем переход на расстояние - top за 1500 мс
-        $('body,html').animate({ scrollTop: top }, 1500);
-    });
-
-
+    if (document.querySelector('#home')) pageHome();
+    else if (document.querySelector('#faq')) pageFaq();
+    else if (document.querySelector('#security')) pageSequrity();
+    else if (document.querySelector('#support')) pageSupport();
+    allSite();
 
 });
-
-
-console.log('global')
-
-

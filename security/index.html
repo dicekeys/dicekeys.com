@@ -15,14 +15,22 @@
             <div class="container">
                 <div class="navbar__content">
                     <div class="logo"><a href="../"><img src="../img/logo.svg" alt=""></a></div>
+                    <div class="menu-btn">
+                        <span class="menu-btn__line menu-btn__line--1"></span>
+                        <span class="menu-btn__line menu-btn__line--2"></span>
+                        <span class="menu-btn__line menu-btn__line--3"></span>
+                    </div>
                     <ul class="menu">
                         <li class="menu__list-item"><a href="../#how_it_works">How it works</a></li>
                         <li class="menu__list-item"><a href="../security/">Security</a></li>
                         <li class="menu__list-item"><a href="../faq/">FAQ</a></li>
                         <li class="menu__list-item"><a href="../support/">Support</a></li>
                         <li class="menu__list-item"><a href="../download/">Download the app</a></li>
+                        <div class="order-btn order-btn--menu-item">
+                            <a href="../store/">Order Now!</a>
+                        </div>
                     </ul>
-                    <div class="order-btn"><a href="../store">Order Now!</a></div>
+                    <div class="order-btn"><a href="../store/">Order Now!</a></div>
                 </div>
             </div>
         </div>
@@ -36,11 +44,11 @@
                     <div class="advantages__text">
                         <p>No other app should need to scan your DiceKey directly. If it needs a cryptographic keys or a
                             password, the DiceKeys app can generate one exclusively for that app to use.</p>
-                        <p>If you let other apps scan your DiceKey, it can create any key that can be generated from
+                        <span>If you let other apps scan your DiceKey, it can create any key that can be generated from
                             your
-                            DiceKey, including ones you might not want it to have access to. Even if the app is designed
+                            DiceKey, including ones you might not want it to have access to. </span><span>Even if the app is designed
                             by
-                            someone you trust, it may be more complex and have hidden vulnerabilities.</p>
+                            someone you trust, it may be more complex and have hidden vulnerabilities.</span>
                     </div>
                 </div>
             </div>
@@ -59,33 +67,45 @@
                     </div>
                 </div>
                 <div class="tips__slider">
-                    <div class="tips__slider-item">
-                        <div class="tips__slider-item-description">
-                            <div class="tips__slider-item-description-text">
-                                <p>If you have saved your DiceKey in the DiceKeys app, there’s no need to worry.</p>
+                    <div>
+                        <div class="tips__slider-item">
+                            <div class="tips__slider-item-description">
+                                <div class="tips__slider-item-description-text">
+                                    <p>If you have saved your DiceKey in the DiceKeys app, there’s no need to worry.</p>
 
-                                <p>Only the DiceKeys app will allow you to load your saved DiceKey.</p>
+                                    <p>Only the DiceKeys app will allow you to load your saved DiceKey.</p>
+                                </div>
+                                <div class="tips__slider-item-description-btn">Next tip</div>
                             </div>
-                            <div class="tips__slider-item-description-btn">Next tip</div>
+                            <div class="tips__slider-item-img">
+                                <img class="tips__slider-item-img-item" src="../img/tips-img.svg" alt="">
+                                <img class="tips__slider-item-img-item-mobile" src="../img/tips-img-mobile.svg" alt="">
+                            </div>
                         </div>
-                        <div class="tips__slider-item-img"><img src="../img/tips-img.svg" alt=""></div>
                     </div>
-                    <div class="tips__slider-item">
-                        <div class="tips__slider-item-description">
-                            <div
-                                class="tips__slider-item-description-text tips__slider-item-description-text--second-tip">
-                                <p>If you need to scan your DiceKey, launch the DiceKeys app from your device’s app
-                                    screen. Scan your DiceKey into the DiceKeys app, then switch into the app that needs
-                                    your DiceKey.</p>
+                    <div>
+                        <div class="tips__slider-item">
+                            <div class="tips__slider-item-description">
+                                <div
+                                    class="tips__slider-item-description-text tips__slider-item-description-text--second-tip">
+                                    <p>If you need to scan your DiceKey, launch the DiceKeys app from your device’s app
+                                        screen. Scan your DiceKey into the DiceKeys app, then switch into the app that
+                                        needs
+                                        your DiceKey.</p>
 
-                                <p>When that app sends you to scan your DiceKey, you’ll know you’re in the correct
-                                    DiceKeys app because your DiceKey will already be scanned in. If you’re asked to
-                                    re-scan it, you may not be in the DiceKeys app and you should quit and re-start the
-                                    DiceKeys app.</p>
+                                    <p>When that app sends you to scan your DiceKey, you’ll know you’re in the correct
+                                        DiceKeys app because your DiceKey will already be scanned in. If you’re asked to
+                                        re-scan it, you may not be in the DiceKeys app and you should quit and re-start
+                                        the
+                                        DiceKeys app.</p>
+                                </div>
+                                <div class="tips__slider-item-description-btn">Previous tip</div>
                             </div>
-                            <div class="tips__slider-item-description-btn">Previous tip</div>
+                            <div class="tips__slider-item-img">
+                                <img class="tips__slider-item-img-item" src="../img/tips-img.svg" alt="">
+                                <img class="tips__slider-item-img-item-mobile" src="../img/tips-img-mobile.svg" alt="">
+                            </div>
                         </div>
-                        <div class="tips__slider-item-img"><img src="../img/tips-img.svg" alt=""></div>
                     </div>
                 </div>
             </div>
@@ -96,6 +116,11 @@
             <div class="combinations__content">
                 <div class="combinations__title section-title">How Strong is a DiceKey?</div>
                 <div class="combinations_row">
+                    <div class="combinations__info-title combinations__info-title--mobile">
+                        <p>DiceKeys can form an astronomical number of combinations.</p>
+                        <p>More than the number of atoms in
+                        billions of galaxies.</p>
+                    </div>
                     <div class="combinations__img"><img src="../img/combinations-img.svg" alt=""></div>
                     <div class="combinations__info">
                         <div class="combinations__info-title">
@@ -144,18 +169,30 @@
         </div>
     </footer>
 
-    <script src="../js/main.min.js"></script>
+    <script src="../js/tiny-slider.js"></script>
     <script>
-        $(function () {
-
-            $('.tips__slider').slick({
-                prevArrow: '<button type="button" class="slick-btn slick-prev">Previous</button>',
-                nextArrow: '<button type="button" class="slick-btn slick-next">Previous</button>',
-                infinite: false
-            });
-
-        })
+        var slider = tns({
+            container: '.tips__slider',
+            items: 1,
+            slideBy: 1,
+            autoplay: false,
+            speed: 600,
+            mouseDrag: true,
+            nav: true,
+            controls: false,
+            touch: true,
+            responsive: {
+              320: {
+                autoHeight: true
+              },
+              420: {
+                autoHeight: false
+              },
+            }
+        });
     </script>
+
+    <script src="../js/main.min.js"></script>
 </body>
 
 </html>

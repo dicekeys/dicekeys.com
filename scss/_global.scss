@@ -19,6 +19,10 @@ body{
     padding: 0 20px;
 }
 
+.container--fluid{
+    padding: 0;
+}
+
 h1, h2, h3, h4, h5, h6{
     padding: 0;
     margin: 0;
@@ -41,88 +45,4 @@ ul{
     list-style: none;
     padding: 0;
     margin: 0;
-}
-
-.quotes{
-
-    .slick-dots{
-        bottom: -100px;
-    }
-
-    .slick-dots li{
-        margin: 0 7.5px;
-    }
-
-    .slick-dots li button{
-        border: 3px solid white;
-        border-radius: 50%;
-        &:before{
-            color: transparent;
-        }
-    }
-
-    .slick-dots li.slick-active button{
-        background-color: #42E8E0;
-        filter: blur(2px);
-        border: 0;
-        &::before{
-            color: transparent;
-        }
-    }
-
-    .slick-slide{
-        width: 440px !important;
-    }
-
-    .slick-next{
-        right: 18px;
-        top: 121.5%;
-        &:before{
-            content: '';
-            background-image: url(../img/slider-btn.svg);
-            background-repeat: no-repeat;
-            display: block;
-            width: 81px;
-            height: 16px;
-        }
-    }
-
-}
-
-.tips{
-
-    .slick-btn.slick-disabled{
-        opacity: 0;
-        transition: all .7s;
-    }
-
-    .slick-next{
-        right: unset;
-        left: 13%;
-        top: 77%;
-        &:before{
-            content: '';
-            background-image: url(../img/slider-arrow-next.svg);
-            background-repeat: no-repeat;
-            display: block;
-            width: 90px;
-            height: 16px;
-        }
-    }
-
-    .slick-prev{
-        right: unset;
-        left: 13%;
-        top: 80%;
-        z-index: 10;
-        &:before{
-            content: '';
-            background-image: url(../img/slider-arrow-prev.svg);
-            background-repeat: no-repeat;
-            display: block;
-            width: 90px;
-            height: 16px;
-        }
-    }
-
 }
