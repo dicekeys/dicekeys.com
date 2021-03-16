@@ -161,7 +161,7 @@
                             <img class="presentation" src="img/presentation-create-step.svg" alt="">
                             <img class="presentation" src="img/presentation-scan-step.svg" alt="">
                             <img class="presentation" src="img/presentation-seal-step.svg" alt="">
-                            <img class="presentation" src="img/presentation-video-placeholder.jpg" alt="">
+                            <div class="presentation presentation--video"><iframe src="https://player.vimeo.com/video/449522920?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
                         </div>
                         <div class="header__presentation-instruction">
                             <div class="header__presentation-instruction-item">
@@ -293,7 +293,7 @@
                                     </div>
                                 </div>
                                 <div class="header__presentation-mobile-slider-item-img">
-                                    <img src="img/presentation-video-placeholder.jpg" alt="">
+                                    <div class="presentation--video"><iframe src="https://player.vimeo.com/video/449522920?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
                                 </div>
                             </div>
                         </div>
@@ -331,10 +331,21 @@
                         </div>
                     </div>
                     <div class="about__downloads">
-                        <div class="about__downloads-item"><a href="https://github.com/dicekeys/dicekeys-app-ios"><img src="img/app_store-icon.svg" alt=""></a>
+                        <div class="about__downloads-item">
+                            <a href="https://github.com/dicekeys/dicekeys-app-ios">
+                                <img src="img/app_store-icon.svg" alt="">
+                            </a>
                         </div>
-                        <div class="about__downloads-item"><a href="https://github.com/dicekeys/dicekeys-android"><img src="img/android-icon.svg" alt=""></a></div>
-                        <!--<div class="about__downloads-item"><a href="#"><img src="img/windows-icon.svg" alt=""></a></div>-->
+                        <div class="about__downloads-item">
+                            <a href="https://github.com/dicekeys/dicekeys-android">
+                                <img src="img/android-icon.svg" alt="">
+                            </a>
+                        </div>
+                        <!-- <div class="about__downloads-item">
+                            <a href="#">
+                                <img src="img/windows-icon.svg" alt="">
+                            </a>
+                        </div> -->
                     </div>
                 </div>
                 <div class="about__column">
@@ -395,10 +406,21 @@
                     </div>
                 </div>
                 <div class="about__downloads">
-                    <div class="about__downloads-item"><a href="https://github.com/dicekeys/dicekeys-app-ios"><img src="img/app_store-icon.svg" alt=""></a>
+                    <div class="about__downloads-item">
+                        <a href="https://github.com/dicekeys/dicekeys-app-ios">
+                            <img src="img/app_store-icon.svg" alt="">
+                        </a>
                     </div>
-                    <div class="about__downloads-item"><a href="https://github.com/dicekeys/dicekeys-android"><img src="img/android-icon.svg" alt=""></a></div>
-                    <!--<div class="about__downloads-item"><a href="#"><img src="img/windows-icon.svg" alt=""></a></div>-->
+                    <div class="about__downloads-item">
+                        <a href="https://github.com/dicekeys/dicekeys-android">
+                            <img src="img/android-icon.svg" alt="">
+                        </a>
+                    </div>
+                    <!-- <div class="about__downloads-item">
+                        <a href="#">
+                            <img src="img/windows-icon.svg" alt="">
+                        </a>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -507,7 +529,10 @@
                             Security for the University of California at Berkeley's Master's Program in Cybersecurity.
                         </div>
                         <div class="leadership__description-social">
-                            <a href="https://twitter.com/uppajung">
+                            <a href="https://www.linkedin.com/in/stuart-schechter/">
+                                <img src="img/linkedin-icon.svg" alt="">
+                            </a>
+                            <a href="https://twitter.com/uppajung/">
                                 <img src="img/tweeter-icon.svg" alt="">
                             </a>
                         </div>
@@ -535,6 +560,9 @@
                                 of cryptocurrencies.
                             </div>
                             <div class="leadership__description-social">
+                                <a href="https://www.linkedin.com/in/joseph-bonneau-15419920/">
+                                    <img src="img/linkedin-icon.svg" alt="">
+                                </a>
                                 <a href="https://twitter.com/josephbonneau">
                                     <img src="img/tweeter-icon.svg" alt="">
                                 </a>
@@ -584,6 +612,7 @@
         </div>
     </footer>
 
+    <script src="https://player.vimeo.com/api/player.js"></script>
     <script src="js/tiny-slider.js"></script>
     <script>
         var slider = tns({
@@ -598,11 +627,6 @@
             center: true,
             controlsText: [" ", " "],
             touch: true,
-            // responsive: {
-            //   500: {
-            //     nav: false
-            //   }
-            // }
         });
 
         var slider = tns({
