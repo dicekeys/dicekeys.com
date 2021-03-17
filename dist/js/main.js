@@ -37,15 +37,15 @@ document.addEventListener('DOMContentLoaded', () => {
         const settingTitle = [
             {
                 idxChangeTitle: 0,
-                title: `Reliable and trustworthy by design: <span>readable by your devices and your own eyes.</span>`
+                title: `How it works`
             },
             {
                 idxChangeTitle: 1,
-                title: `Reliable and trustworthy by design: <span>readable by your devices and your own eyes.</span>`
+                title: `How it works`
             },
             {
                 idxChangeTitle: 2,
-                title: `Reliable and trustworthy by design: <span>readable by your devices and your own eyes.</span>`
+                title: `How it works`
             },
             {
                 idxChangeTitle: 3,
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
             textlist[activeElement].classList.add("active");
         };
 
-        chooseBlockImageAndAcordeons(presentationItem, presentation, presentationTitle, settingTitle, 3);
+        chooseBlockImageAndAcordeons(presentationItem, presentation, presentationTitle, settingTitle, 0);
     };
 
     function pageFaq() { 
