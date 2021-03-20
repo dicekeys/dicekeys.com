@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
             textlist[activeElement].classList.add("active");
         };
 
-        chooseBlockImageAndAcordeons(presentationItem, presentation, presentationTitle, settingTitle, 3);
+        chooseBlockImageAndAcordeons(presentationItem, presentation, presentationTitle, settingTitle, 0);
     };
 
     function pageFaq() { 
