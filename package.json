@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "upload-preview": "gsutil -o \"GSUtil:parallel_process_count=1\" -m cp -r dist/* gs://preview.dicekeys.com/ & gsutil  -o \"GSUtil:parallel_process_count=1\" -m setmeta -h \"Content-Type: application/javascript\" gs://preview.dicekeys.com/js/*.js"
+    "upload-preview": "gsutil -o \"GSUtil:parallel_process_count=1\" -m cp -r dist/* gs://preview.dicekeys.com/ & gsutil  -o \"GSUtil:parallel_process_count=1\" -m setmeta -h \"Content-Type: application/javascript\" gs://preview.dicekeys.com/js/*.js",
+    "upload-production": "gsutil -o \"GSUtil:parallel_process_count=1\" -m cp -r dist/* gs://dicekeys.com/ & gsutil  -o \"GSUtil:parallel_process_count=1\" -m setmeta -h \"Content-Type: application/javascript\" gs://dicekeys.com/js/*.js"
   },
   "author": "Stepan Kalius",
   "license": "ISC",
