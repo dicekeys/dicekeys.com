@@ -54,26 +54,28 @@
                                     How do I use my DiceKey to seed a SoloKey?
                                 </div>
                                 <div class="answers__item-answer">
-                                    You scan your DiceKey into the DiceKeys app, choose the "Seed SoloKey" option, and follow the instructions.
+                                    To scan your DiceKey into the DiceKeys app for MacOS or Android, load in your DiceKey, choose the "SoloKey" option on the bottom tab (look for the picture of a SoloKey), insert your SoloKey, and follow the instructions from there.
                                     <br/>
-                                    This currently only works on the Android and MacOS apps as iOS apps are not permitted to write to USB devices.
+                                    <br/>
+                                    If you only have a Windows PC, we have provided a <a href="https://github.com/dicekeys/seeding-from-windows">command-line tool</a> for seeding your SoloKey.  We'll soon update our web-based app to provide the seed so that you can copy it to the command line.
+                                    After that, we'll start working on a full windows app.
+                                    <br/>
+                                    <br/>
+                                    We are unable to offer the seeding via iPhones, iPads, or the web-based app.
                                 </div>
                             </div>
                             <div class="answers__item">
                                 <div class="answers__item-question">
-                                    Why can't I seed my SoloKey using the DiceKeys app on an iPhone or iPad?
+                                    Why can't I seed my SoloKey using the DiceKeys app on an iPhone or iPad, or via the web-based app?
                                 </div>
                                 <div class="answers__item-answer">
-                                    Apple blocks iPhone and iPad apps from accessing security keys and other USB devices.
-                                </div>
-                            </div>
-                            <div class="answers__item">
-                                <div class="answers__item-question">
-                                    How do you reduce the risk the app will read my DiceKey incorrectly?
-                                </div>
-                                <div class="answers__item-answer">
-                                    The letter and digit on each die are also encoded a second time into the binary code in the underline, and a third time into the overline. 
-                                    The DiceKeys app checks the letter and digit once against the encoding in the underline and again using the overline.
+                                    We cannot offer seeding on iPhones or iPads as Apple prohibits iOS apps from accessing any USB device directly.
+                                    We cannot offer seeding via the web app, as browsers are current blocking communications with security keys specifically.
+                                    <br/>
+                                    <br/>
+                                    We disclosed this limitation in an update to backers while orders could still be cancelled, but are sorry that we e were not aware of these limitations during the campaign.
+                                    The limitations on USB devices on iOS are not clearly documented by Apple.
+                                    The Chrome team only only documented that they block communications with security keys<i>after</i> we filed a bug with them.
                                 </div>
                             </div>
                             <div class="answers__item">
