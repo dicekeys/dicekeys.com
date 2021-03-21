@@ -57,7 +57,7 @@
                                     To scan your DiceKey into the DiceKeys app for MacOS or Android, load in your DiceKey, choose the "SoloKey" option on the bottom tab (look for the picture of a SoloKey), insert your SoloKey, and follow the instructions from there.
                                     <br/>
                                     <br/>
-                                    If you only have a Windows PC, we have provided a <a href="https://github.com/dicekeys/seeding-from-windows">command-line tool</a> for seeding your SoloKey.  We'll soon update our web-based app to provide the seed so that you can copy it to the command line.
+                                    If you only have a Windows PC, we have provided a <a href="https://github.com/dicekeys/seeding-from-windows">command-line tool</a> for seeding your SoloKey.  We'll soon update our web-based app to provide the seed from your DiceKey for you to copy to the command line.
                                     After that, we'll start working on a full windows app.
                                     <br/>
                                     <br/>
@@ -109,6 +109,18 @@
                                 </div>
                                 <div class="answers__item-answer">
                                     Now that we have the Mac, iOS, and Android apps working, we're working on the Windows version that can write SoloKeys.
+                                </div>
+                            </div>
+                            <div class="answers__item">
+                                <div class="answers__item-question">
+                                    Why do generated passwords in that unusual format?
+                                </div>
+                                <div class="answers__item-answer">
+                                    Some systems require passwords that have uppercase, lowercase, digits, and symbols, even though this won't improve security for the passwords we generate.
+                                    <br/>
+                                    To meet these requirements, we start all passwords with a number of words that will follow, separate words with a dash, and use uppercase for the first character of the first word.  We considered a variety of ways to achieve the goal and this one was the most popular with our beta users.
+                                    <br/>
+                                    We use a dictionary of words that are sufficiently different from each other that, if you mistake a mistake writing them down, you should be able to identify the mistake by looking at the list of valid words.
                                 </div>
                             </div>
                             <div class="answers__item">
