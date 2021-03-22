@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DiceKeys: FAQ</title>
+    <link rel="icon" type="image/svg" href="/favicon.svg">
     <link rel="stylesheet" href="../css/style.min.css">
 </head>
 
@@ -53,17 +54,28 @@
                                     How do I use my DiceKey to seed a SoloKey?
                                 </a></div>
                                 <div class="answers__item-answer">
-                                    You scan your DiceKey into the DiceKeys app, choose the "Seed SoloKey" option, and follow the instructions.
+                                    To scan your DiceKey into the DiceKeys app for MacOS or Android, load in your DiceKey, choose the "SoloKey" option on the bottom tab (look for the picture of a SoloKey), insert your SoloKey, and follow the instructions from there.
                                     <br/>
-                                    This currently only works on the Android and MacOS apps as iOS apps are not permitted to write to USB devices.
+                                    <br/>
+                                    If you only have a Windows PC, we have provided a <a href="https://github.com/dicekeys/seeding-from-windows">command-line tool</a> for seeding your SoloKey.  We'll soon update our web-based app to provide the seed from your DiceKey for you to copy to the command line.
+                                    After that, we'll start working on a full windows app.
+                                    <br/>
+                                    <br/>
+                                    We are unable to offer the seeding via iPhones, iPads, or the web-based app.
                                 </div>
                             </div>
                             <div class="answers__item">
                                 <div class="answers__item-question">
-                                    Why can't I seed my SoloKey using the DiceKeys app on an iPhone or iPad?
+                                    Why can't I seed my SoloKey using the DiceKeys app on an iPhone or iPad, or via the web-based app?
                                 </div>
                                 <div class="answers__item-answer">
-                                    Apple blocks iPhone and iPad apps from accessing security keys and other USB devices.
+                                    We cannot offer seeding on iPhones or iPads as Apple prohibits iOS apps from accessing any USB device directly.
+                                    We cannot offer seeding via the web app, as browsers are current blocking communications with security keys specifically.
+                                    <br/>
+                                    <br/>
+                                    We disclosed this limitation in an update to backers while orders could still be cancelled, but are sorry that we e were not aware of these limitations during the campaign.
+                                    The limitations on USB devices on iOS are not clearly documented by Apple.
+                                    The Chrome team only only documented that they block communications with security keys<i>after</i> we filed a bug with them.
                                 </div>
                             </div>
                             <div class="answers__item">
@@ -105,7 +117,19 @@
                                     Is there a DiceKeys app for Windows?
                                 </div>
                                 <div class="answers__item-answer">
-                                    Now that we have the Mac, iOS, and Android apps working, we're working on the Windows version that can write Solokeys.
+                                    Now that we have the Mac, iOS, and Android apps working, we're working on the Windows version that can write SoloKeys.
+                                </div>
+                            </div>
+                            <div class="answers__item">
+                                <div class="answers__item-question">
+                                    Why do generated passwords in that unusual format?
+                                </div>
+                                <div class="answers__item-answer">
+                                    Some systems require passwords that have uppercase, lowercase, digits, and symbols, even though this won't improve security for the passwords we generate.
+                                    <br/>
+                                    To meet these requirements, we start all passwords with a number of words that will follow, separate words with a dash, and use uppercase for the first character of the first word.  We considered a variety of ways to achieve the goal and this one was the most popular with our beta users.
+                                    <br/>
+                                    We use a dictionary of words that are sufficiently different from each other that, if you mistake a mistake writing them down, you should be able to identify the mistake by looking at the list of valid words.
                                 </div>
                             </div>
                             <div class="answers__item">
@@ -226,7 +250,19 @@
                             </div>
                             <div class="answers__item">
                                 <div class="answers__item-question">
-                                    Can I print my DiceKey?
+                                    Can I create replacement parts with a 3D printer?
+                                </div>
+                                <div class="answers__item-answer">
+                                    We don't recommend creating replacement parts with a 3D printer.
+                                    In our prototyping, filament-based printers lacked sufficient precision.
+                                    SLA printers were precise enough to create reasonable replicas that can hold dice, but the latches to hold the pieces together were not reliably flexible enough during assembly or strong enough after.
+                                    We can share latch-less reference designs for experimentation or personal use by those who recognize these limitations and concerns.
+                                    We have relied upon the expertise of our injection-mold manufacturer to customize the latches to their materials and manufacturing process, and their customizations are not ours to share.
+                                </div>
+                            </div>
+                            <div class="answers__item">
+                                <div class="answers__item-question">
+                                    Can I print an image DiceKey?
                                 </div>
                                 <div class="answers__item-answer">
                                     You could, but that could be risky your printer is not properly secured or the network you use to connect to it is vulnerable. 
