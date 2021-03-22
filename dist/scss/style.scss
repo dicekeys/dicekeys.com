@@ -818,6 +818,12 @@
     padding: 35px 50px;
     margin-left: 93px;
     margin-top: 25px;
+    a{
+        font-weight: 500;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
 }
 
 .colapse-btn {
