@@ -245,7 +245,7 @@
         background-image: none !important;
     }
     .answers__item-answer {
-        padding: 0 30px;
+        padding: 15px 30px;
     }
     .answers__item.active .answers__item-answer {
         padding: 15px 30px;
@@ -1079,7 +1079,8 @@
         font-size: 12px;
         line-height: 165%;
         margin: 0;
-        padding: 0 34px;
+        padding: 17px 34px;
+        margin-top: 15px;
     }
     .answers__item.active {
         .answers__item-answer{

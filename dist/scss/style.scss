@@ -796,14 +796,17 @@
         height: 18px;
         background-image: url(../img/plus-icon.svg);
         background-repeat: no-repeat;
+        //
+        display: none;
+        //
     }
 }
 
 .answers__item-answer {
     max-width: 825px;
-    min-height: 0;
-    max-height: 0;
-    opacity: 0;
+    min-height: unset;
+    max-height: unset;
+    opacity: 1;
     overflow: hidden;
     transition: all .8s linear;
     // font-family: Gotham Pro;
@@ -812,8 +815,17 @@
     color: #414141;
     border: 1px solid rgba(#3cadb3, 0.3);
     border-radius: 12px;
-    padding: 0 50px;
+    padding: 35px 50px;
     margin-left: 93px;
+    margin-top: 25px;
+}
+
+.colapse-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 36px;
+    color: #3CADB3;
 }
 
 .contact__content {
