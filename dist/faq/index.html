@@ -46,225 +46,388 @@
                     <!--
                         Seeding SoloKeys
                     -->
-                    <div class="answers__category">
-                        <div class="answers__category-title">Seeding SoloKeys</div>
-                        <div class="answer__item-content">
-                            <div class="answers__item">
-                                <div class="answers__item-question">
-                                    How do I use my DiceKey to seed a SoloKey?
-                                </div>
-                                <div class="answers__item-answer">
-                                    To scan your DiceKey into the DiceKeys app for MacOS or Android, load in your DiceKey, choose the "SoloKey" option on the bottom tab (look for the picture of a SoloKey), insert your SoloKey, and follow the instructions from there.
-                                    <br/>
-                                    <br/>
-                                    If you only have a Windows PC, we have provided a <a href="https://github.com/dicekeys/seeding-from-windows">command-line tool</a> for seeding your SoloKey.  We'll soon update our web-based app to provide the seed from your DiceKey for you to copy to the command line.
-                                    After that, we'll start working on a full windows app.
-                                    <br/>
-                                    <br/>
-                                    We are unable to offer the seeding via iPhones, iPads, or the web-based app.
-                                </div>
-                            </div>
-                            <div class="answers__item">
-                                <div class="answers__item-question">
-                                    Why can't I seed my SoloKey using the DiceKeys app on an iPhone or iPad, or via the web-based app?
-                                </div>
-                                <div class="answers__item-answer">
-                                    We cannot offer seeding on iPhones or iPads as Apple prohibits iOS apps from accessing any USB device directly.
-                                    We cannot offer seeding via the web app, as browsers are current blocking communications with security keys specifically.
-                                    <br/>
-                                    <br/>
-                                    We disclosed this limitation in an update to backers while orders could still be cancelled, but are sorry that we e were not aware of these limitations during the campaign.
-                                    The limitations on USB devices on iOS are not clearly documented by Apple.
-                                    The Chrome team only only documented that they block communications with security keys<i>after</i> we filed a bug with them.
-                                </div>
-                            </div>
-                            <div class="answers__item">
-                                <div class="answers__item-question">
-                                    Do DiceKeys work with any FIDO/WebAuthN key?
-                                </div>
-                                <div class="answers__item-answer">
-                                    No. It needs to comply with our <a href="https://github.com/dicekeys/seeding-webauthn">open standard for seeding security keys.</a>
-                                    For now, you will need choose from those SoloKeys with firmware that is DiceKeys compatible with this standard, such as the ones shipped as part of our Crowd Supply campaign with the SoloKeys team.
-                                </div>
-                            </div>
-                            <div class="answers__item">
-                                <div class="answers__item-question">
-                                    How do I reach the SoloKeys team for support?
-                                </div>
-                                <div class="answers__item-answer">
-                                    Use this <a href="https://solokeys.com/pages/contact-us">web form</a> or try reach out to them on Twitter <a href="https://twitter.com/solokeyssec">@SoloKeysSec</a>.
-                                </div>
-                            </div>
+                    <div class="answers__category active">
+                        <div class="answers__category-title">
+                            Seeding SoloKeys
                         </div>
+                        <div class="answer__item-content">
+                            
+                            <div class="answers__item">
+                                <div class="answers__item-question">
+                                    <a class="collapse-toggle" data-collapse data-group="accordion" href="#how_do_i_use_my_diceKey_to_seed_a_solokey">
+                                        How do I use my DiceKey to seed a SoloKey?
+                                        <span class="colapse-btn collapse-text-show">+</span>
+                                        <span class="colapse-btn collapse-text-hide">-</span>
+                                    </a>
+                                </div>
+                                <div class="collapse" id="how_do_i_use_my_diceKey_to_seed_a_solokey">
+                                    <div class="answers__item-answer">
+                                        To scan your DiceKey into the DiceKeys app for MacOS or Android, load in your DiceKey, choose the "SoloKey" option on the bottom tab (look for the picture of a SoloKey), insert your SoloKey, and follow the instructions from there.
+                                        <br/>
+                                        <br/>
+                                        If you only have a Windows PC, we have provided a <a href="https://github.com/dicekeys/seeding-from-windows">command-line tool</a> for seeding your SoloKey.  We'll soon update our web-based app to provide the seed from your DiceKey for you to copy to the command line.
+                                        After that, we'll start working on a full windows app.
+                                        <br/>
+                                        <br/>
+                                        We are unable to offer the seeding via iPhones, iPads, or the web-based app.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="answers__item">
+                                <div class="answers__item-question">
+                                    <a class="collapse-toggle" data-collapse data-group="accordion" href="#why_cant_i_seed_my_solokey_using">
+                                        Why can't I seed my SoloKey using the DiceKeys app on an iPhone or iPad, or via the web-based app?
+                                        <span class="colapse-btn collapse-text-show">+</span>
+                                        <span class="colapse-btn collapse-text-hide">-</span>
+                                    </a>
+                                </div>
+                                <div class="collapse" id="why_cant_i_seed_my_solokey_using">
+                                    <div class="answers__item-answer">
+                                        We cannot offer seeding on iPhones or iPads as Apple prohibits iOS apps from accessing any USB device directly.
+                                        We cannot offer seeding via the web app, as browsers are current blocking communications with security keys specifically.
+                                        <br/>
+                                        <br/>
+                                        We disclosed this limitation in an update to backers while orders could still be cancelled, but are sorry that we e were not aware of these limitations during the campaign.
+                                        The limitations on USB devices on iOS are not clearly documented by Apple.
+                                        The Chrome team only only documented that they block communications with security keys<i>after</i> we filed a bug with them.
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="answers__item">
+                                <div class="answers__item-question">
+                                    <a class="collapse-toggle" data-collapse data-group="accordion" href="#do_dicekeys_work_with_any_fido_webauthn_key">
+                                    Do DiceKeys work with any FIDO/WebAuthN key?
+                                    <span class="colapse-btn collapse-text-show">+</span>
+                                    <span class="colapse-btn collapse-text-hide">-</span>
+                                    </a>
+                                </div>
+                                <div class="collapse" id="do_dicekeys_work_with_any_fido_webauthn_key">
+                                    <div class="answers__item-answer">
+                                        No. It needs to comply with our <a href="https://github.com/dicekeys/seeding-webauthn">open standard for seeding security keys.</a>
+                                        For now, you will need choose from those SoloKeys with firmware that is DiceKeys compatible with this standard, such as the ones shipped as part of our Crowd Supply campaign with the SoloKeys team.
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="answers__item">
+                                <div class="answers__item-question">
+                                    <a class="collapse-toggle" data-collapse data-group="accordion" href="#how_do_i_reach_the_solokeys_team_for_support">
+                                    How do I reach the SoloKeys team for support?
+                                    <span class="colapse-btn collapse-text-show">+</span>
+                                    <span class="colapse-btn collapse-text-hide">-</span>
+                                    </a>
+                                </div>
+                                <div class="collapse" id="how_do_i_reach_the_solokeys_team_for_support">
+                                    <div class="answers__item-answer">
+                                        Use this <a href="https://solokeys.com/pages/contact-us">web form</a> or try reach out to them on Twitter <a href="https://twitter.com/solokeyssec">@SoloKeysSec</a>.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+
                     </div>
                     <!-- 
                         The DiceKeys App
                      -->
-                    <div class="answers__category">
+                    <div class="answers__category active">
                         <div class="answers__category-title">The DiceKeys App</div>
                         <div class="answer__item-content">
+
                             <div class="answers__item">
                                 <div class="answers__item-question">
-                                    Is there a DiceKeys app for Windows?
+                                    <a class="collapse-toggle" data-collapse data-group="accordion" href="#is_there_a_dicekeys_app_for_windows">
+                                        Is there a DiceKeys app for Windows?
+                                        <span class="colapse-btn collapse-text-show">+</span>
+                                        <span class="colapse-btn collapse-text-hide">-</span>
+                                    </a>
                                 </div>
-                                <div class="answers__item-answer">
-                                    Now that we have the Mac, iOS, and Android apps working, we're working on the Windows version that can write SoloKeys.
+                                <div class="collapse" id="is_there_a_dicekeys_app_for_windows">
+                                    <div class="answers__item-answer">
+                                        Now that we have the Mac, iOS, and Android apps working, we're working on the Windows version that can write SoloKeys.
+                                    </div>
                                 </div>
                             </div>
+
                             <div class="answers__item">
                                 <div class="answers__item-question">
-                                    Why do generated passwords in that unusual format?
+                                    <a class="collapse-toggle" data-collapse data-group="accordion" href="#why_do_generated_passwords_in_that_unusual_format">
+                                        Why do generated passwords in that unusual format?
+                                        <span class="colapse-btn collapse-text-show">+</span>
+                                        <span class="colapse-btn collapse-text-hide">-</span>
+                                    </a>
                                 </div>
-                                <div class="answers__item-answer">
-                                    Some systems require passwords that have uppercase, lowercase, digits, and symbols, even though this won't improve security for the passwords we generate.
-                                    <br/>
-                                    To meet these requirements, we start all passwords with a number of words that will follow, separate words with a dash, and use uppercase for the first character of the first word.  We considered a variety of ways to achieve the goal and this one was the most popular with our beta users.
-                                    <br/>
-                                    We use a dictionary of words that are sufficiently different from each other that, if you mistake a mistake writing them down, you should be able to identify the mistake by looking at the list of valid words.
+                                <div class="collapse" id="why_do_generated_passwords_in_that_unusual_format">
+                                    <div class="answers__item-answer">
+                                        Some systems require passwords that have uppercase, lowercase, digits, and symbols, even though this won't improve security for the passwords we generate.
+                                        <br/>
+                                        To meet these requirements, we start all passwords with a number of words that will follow, separate words with a dash, and use uppercase for the first character of the first word.  We considered a variety of ways to achieve the goal and this one was the most popular with our beta users.
+                                        <br/>
+                                        We use a dictionary of 512 words that are sufficiently different from each other that, if you mistake a mistake writing them down, you should be able to identify the mistake by looking at the list of valid words.
+                                    </div>
                                 </div>
                             </div>
+
                             <div class="answers__item">
                                 <div class="answers__item-question">
-                                    Why does the web-based app at dicekeys.app not have all the features of the native apps?
+                                    <a class="collapse-toggle" data-collapse data-group="accordion" href="#why_does_the_web-based_app_at_dicekeys_app_not_have_all_the_features_of_the_native_apps">
+                                        Why does the web-based app at dicekeys.app not have all the features of the native apps?
+                                        <span class="colapse-btn collapse-text-show">+</span>
+                                        <span class="colapse-btn collapse-text-hide">-</span>
+                                    </a>
                                 </div>
-                                <div class="answers__item-answer">
-                                    We're trying to get native apps polished first, since most users will be prefer the security of a app they can download from an app store and that doesn't run in a web browser.
+                                <div class="collapse" id="why_does_the_web-based_app_at_dicekeys_app_not_have_all_the_features_of_the_native_apps">
+                                    <div class="answers__item-answer">
+                                        We're trying to get native apps polished first, since most users will be prefer the security of a app they can download from an app store and that doesn't run in a web browser.
+                                    </div>
                                 </div>
                             </div>
+
                             <div class="answers__item">
                                 <div class="answers__item-question">
-                                    How does the DiceKeys app reduce the risk the app will read my DiceKey incorrectly?
+                                    <a class="collapse-toggle" data-collapse data-group="accordion" href="#how_does_the_dicekeys_app_reduce_the_risk_the_app_will_read_my_dicekey_incorrectly">
+                                        How does the DiceKeys app reduce the risk the app will read my DiceKey incorrectly?
+                                        <span class="colapse-btn collapse-text-show">+</span>
+                                        <span class="colapse-btn collapse-text-hide">-</span>
+                                    </a>
                                 </div>
-                                <div class="answers__item-answer">
-                                    The letter and digit on each die are also encoded a second time into the binary code in the underline, and a third time into the overline. The DiceKeys app checks the letter and digit once against the encoding in the underline and again using the underline.
+                                <div class="collapse" id="how_does_the_dicekeys_app_reduce_the_risk_the_app_will_read_my_dicekey_incorrectly">
+                                    <div class="answers__item-answer">
+                                        The letter and digit on each die are also encoded a second time into the binary code in the underline, and a third time into the overline. 
+                                        The DiceKeys app checks the letter and digit once against the encoding in the underline and again using the overline.
+                                    </div>
                                 </div>
                             </div>
+
                             <div class="answers__item">
                                 <div class="answers__item-question">
-                                    How do I use the DiceKeys App with a password manager?
+                                    <a class="collapse-toggle" data-collapse data-group="accordion" href="#how_do_i_use_the_dicekeys_app_with_a_password_manager">
+                                        How do I use the DiceKeys App with a password manager?
+                                        <span class="colapse-btn collapse-text-show">+</span>
+                                        <span class="colapse-btn collapse-text-hide">-</span>
+                                    </a>
                                 </div>
-                                <div class="answers__item-answer">
-                                    For now, you can scan your DiceKey into the DiceKeys app and use the app to generate the 'master' password for your password manager. You can copy and paste it into your password manager. We also offer an API that allows password manager apps to request your master password from the DiceKeys app, or even request a cryptographic key that will make your master password entirely unnecessary.
+                                <div class="collapse" id="how_do_i_use_the_dicekeys_app_with_a_password_manager">
+                                    <div class="answers__item-answer">
+                                        For now, you can scan your DiceKey into the DiceKeys app and use the app to generate the 'master' password for your password manager. 
+                                        You can copy and paste it into your password manager. 
+                                        We also offer an API that allows password manager apps to request your master password from the DiceKeys app,
+                                        or even request a cryptographic key that will make your master password entirely unnecessary.
+                                    </div>
                                 </div>
                             </div>
+
                             <div class="answers__item">
                                 <div class="answers__item-question">
-                                    What happens if I scan my key at a different orientation?
+                                    <a class="collapse-toggle" data-collapse data-group="accordion" href="#what_happens_if_i_scan_my_key_at_a_different_orientation">
+                                        What happens if I scan my key at a different orientation?
+                                        <span class="colapse-btn collapse-text-show">+</span>
+                                        <span class="colapse-btn collapse-text-hide">-</span>
+                                    </a>
                                 </div>
-                                <div class="answers__item-answer">
-                                    The die in the top left corner when you scan your DiceKey once may be in a different corner the next time you scan it. No problem! The DiceKeys app orients your DiceKey before generating passwords and keys so that it doesn't matter which corner is the top left. (This is why the security strength is 196 bits, not 198 bits.)
+                                <div class="collapse" id="what_happens_if_i_scan_my_key_at_a_different_orientation">
+                                    <div class="answers__item-answer">
+                                        The die in the top left corner when you scan your DiceKey once may be in a different corner the next time you scan it. 
+                                        No problem! The DiceKeys app orients your DiceKey before generating passwords and keys so that it doesn't matter which corner is the top left. 
+                                        (This is why the security strength is 196 bits, not 198 bits.)
+                                    </div>
                                 </div>
                             </div>
+
                             <div class="answers__item">
                                 <div class="answers__item-question">
-                                    What open-source license does the software use?
+                                    <a class="collapse-toggle" data-collapse data-group="accordion" href="#what_open-source_license_does_the_software_use">
+                                        What open-source license does the software use?
+                                        <span class="colapse-btn collapse-text-show">+</span>
+                                        <span class="colapse-btn collapse-text-hide">-</span>
+                                    </a>
                                 </div>
-                                <div class="answers__item-answer">
-                                    Our software is available under the MIT license. It allows us to license the software without licensing the DiceKeys software without the patents needed to produce DiceKeys hardware.
+                                <div class="collapse" id="what_open-source_license_does_the_software_use">
+                                    <div class="answers__item-answer">
+                                        Our software is available under the MIT license. 
+                                        It allows us to license the software without licensing the DiceKeys software without the patents needed to produce DiceKeys hardware.
+                                    </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                     <!--
                         Hardware
                     -->
-                    <div class="answers__category">
+                    <div class="answers__category active">
                         <div class="answers__category-title">
                             DiceKeys Hardware
                         </div>
                         <div class="answer__item-content">
+
                             <div class="answers__item">
                                 <div class="answers__item-question">
-                                    Can I re-open my DiceKey to change the key?
+                                    <a class="collapse-toggle" data-collapse data-group="accordion" href="#can_i_re-open_my_dicekey_to_change_the_key">
+                                        Can I re-open my DiceKey to change the key?
+                                        <span class="colapse-btn collapse-text-show">+</span>
+                                        <span class="colapse-btn collapse-text-hide">-</span>
+                                    </a>
                                 </div>
-                                <div class="answers__item-answer">
-                                    Not easily, and you might break it if you try. 
-                                    In our design, we prioritized making it hard for the dice to accidentally come out of arrangement over making it easy to re-arrange them.
+                                <div class="collapse" id="can_i_re-open_my_dicekey_to_change_the_key">
+                                    <div class="answers__item-answer">
+                                        Not easily, and you might break it if you try.
+                                        In our design, we prioritized making it hard for the dice to accidentally come out of arrangement over making it easy to re-arrange them.
+                                    </div>
                                 </div>
                             </div>
+
                             <div class="answers__item">
                                 <div class="answers__item-question">
-                                    What if I accidentally closed my DiceKey box too soon?
+                                    <a class="collapse-toggle" data-collapse data-group="accordion" href="#what_if_i_accidentally_closed_my_dicekey_box_too_soon">
+                                        What if I accidentally closed my DiceKey box too soon?
+                                        <span class="colapse-btn collapse-text-show">+</span>
+                                        <span class="colapse-btn collapse-text-hide">-</span>
+                                    </a>
                                 </div>
-                                <div class="answers__item-answer">
-                                    The latches that hold the box closed are on the two opposing sides perpendicular to the hinges.
-                                    Try using a very small flat-head screwdriver.
-                                    Gently wedge it between the top and bottom parts in one of those sides, halfway between the two corners.
-                                    Gently lift the top as you pry it away from the bottom.
+                                <div class="collapse" id="what_if_i_accidentally_closed_my_dicekey_box_too_soon">
+                                    <div class="answers__item-answer">
+                                        The latches that hold the box closed are on the two opposing sides perpendicular to the hinges.
+                                        Try using a very small flat-head screwdriver.
+                                        Gently wedge it between the top and bottom parts in one of those sides, halfway between the two corners.
+                                        Gently lift the top as you pry it away from the bottom.
+                                    </div>
                                 </div>
                             </div>
+
                             <div class="answers__item">
                                 <div class="answers__item-question">
-                                    Is the DiceKeys hardware patented?
+                                    <a class="collapse-toggle" data-collapse data-group="accordion" href="#is_the_dicekeys_hardware_patented">
+                                        Is the DiceKeys hardware patented?
+                                        <span class="colapse-btn collapse-text-show">+</span>
+                                        <span class="colapse-btn collapse-text-hide">-</span>
+                                    </a>
                                 </div>
-                                <div class="answers__item-answer">
-                                    Yes. We have filed a <a href="http://appft1.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PG01&p=1&u=/netahtml/PTO/srchnum.html&r=1&f=G&l=50&s1=20210067354.PGNR.&OS=DN/20210067354&RS=DN/20210067354">patent (application 20210067354, pending)</a> for the exclusive purpose of protecting the right to produce DiceKeys hardware (including Stickeys). When you purchase a DiceKey, you pay an up-front cost with no hidden subscriptions or up-sells. While other businesses are built around turning customers into recurring revenue streams, we've invested in designing a product that's meant to last your lifetime. The hardware is 100% yours and the software is open source to ensure your rights to use it never expire.
-                                    <br/>
-                                    We are taking an authentication product to market at a time when the five largest US companies by market capitalization all play the role of identity providers, and even the "smaller" companies focused solely on authentication products are raising tens to hundreds of millions of dollars (each!) from venture capitalists. Patenting prevents free-loaders from draining the revenue stream that will continue to fund the open-source software DiceKeys rely upon. Patenting gives us a fighting chance to see a return on our significant investment of time and money. Patenting also empowers us to require that licensees meet standards for product quality, labor, and environmental impact -- preventing a race to the bottom in which the winning strategy is to abandon all such concerns.
+                                <div class="collapse" id="is_the_dicekeys_hardware_patented">
+                                    <div class="answers__item-answer">
+                                        Yes. We have filed a <a href="http://appft1.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PG01&p=1&u=/netahtml/PTO/srchnum.html&r=1&f=G&l=50&s1=20210067354.PGNR.&OS=DN/20210067354&RS=DN/20210067354">patent (application 20210067354, pending)</a> 
+                                        for the exclusive purpose of protecting the right to produce DiceKeys hardware (including Stickeys).
+                                        When you purchase a DiceKey, you pay an up-front cost with no hidden subscriptions or up-sells. 
+                                        While other businesses are built around turning customers into recurring revenue streams, 
+                                        we've invested in designing a product that's meant to last your lifetime. 
+                                        The hardware is 100% yours and the software is open source to ensure your rights to use it never expire.
+                                        <br />
+                                        We are taking an authentication product to market at a time when the five largest US companies by market capitalization all play the role of identity providers, 
+                                        and even the "smaller" companies focused solely on authentication products are raising tens to hundreds of millions of dollars (each!) from venture capitalists. 
+                                        Patenting prevents free-loaders from draining the revenue stream that will continue to fund the open-source software DiceKeys rely upon. 
+                                        Patenting gives us a fighting chance to see a return on our significant investment of time and money. 
+                                        Patenting also empowers us to require that licensees meet standards for product quality, labor, and environmental impact --
+                                        preventing a race to the bottom in which the winning strategy is to abandon all such concerns.
+                                    </div>
                                 </div>
                             </div>
+
                             <div class="answers__item">
                                 <div class="answers__item-question">
-                                    Why is there no Q die?
+                                    <a class="collapse-toggle" data-collapse data-group="accordion" href="#why_is_there_no_q_die">
+                                        Why is there no Q die?
+                                        <span class="colapse-btn collapse-text-show">+</span>
+                                        <span class="colapse-btn collapse-text-hide">-</span>
+                                    </a>
                                 </div>
-                                <div class="answers__item-answer">
-                                    Imagine a game of musical chairs with 26 uppercase letters but only 25 dice for them to sit on. 
-                                    Now imagine one of those letters has a vestigial tail, which makes it harder to sit. 
-                                    That tail of a Q extends below the font's baseline. 
-                                    To accommodate the Q, every die would need to use a smaller font, making all letters and digits harder to read.
+                                <div class="collapse" id="why_is_there_no_q_die">
+                                    <div class="answers__item-answer">
+                                        Imagine a game of musical chairs with 26 uppercase letters but only 25 dice for them to sit on.
+                                        Now imagine one of those letters has a vestigial tail, which makes it harder to sit.
+                                        That tail of a Q extends below the font's baseline.
+                                        To accommodate the Q, every die would need to use a smaller font, making all letters and digits harder to read.
+                                    </div>
                                 </div>
                             </div>
+
                             <div class="answers__item">
                                 <div class="answers__item-question">
-                                    What are Stickeys                                
+                                    <a class="collapse-toggle" data-collapse data-group="accordion" href="#what_are_stickeys">
+                                        What are Stickeys?
+                                        <span class="colapse-btn collapse-text-show">+</span>
+                                        <span class="colapse-btn collapse-text-hide">-</span>
+                                    </a>
                                 </div>
-                                <div class="answers__item-answer">
-                                    Stickeys are a way to backup DiceKeys. Each kit comes with 150 stickers (one for each die face). 
-                                    You backup your DiceKey by building a 5x5 grid of stickers that matches your DiceKey.
+                                <div class="collapse" id="what_are_stickeys">
+                                    <div class="answers__item-answer">
+                                        Stickeys are a way to backup DiceKeys. Each kit comes with 150 stickers (one for each die face).
+                                        You backup your DiceKey by building a 5x5 grid of stickers that matches your DiceKey.
+                                    </div>
                                 </div>
                             </div>
+
                             <div class="answers__item">
                                 <div class="answers__item-question">
-                                    Are you making a metal version?
+                                    <a class="collapse-toggle" data-collapse data-group="accordion" href="#are_you_making_a_metal_version">
+                                        Are you making a metal version?
+                                        <span class="colapse-btn collapse-text-show">+</span>
+                                        <span class="colapse-btn collapse-text-hide">-</span>
+                                    </a>
                                 </div>
-                                <div class="answers__item-answer">
-                                    We are planning to in the future. We will likely use two-sided metal chips (similar to Stickeys) to achieve a relatively flat form factor.
+                                <div class="collapse" id="are_you_making_a_metal_version">
+                                    <div class="answers__item-answer">
+                                        We are planning to in the future. We will likely use two-sided metal chips (similar to Stickeys) to achieve a relatively flat form factor.
+                                    </div>
                                 </div>
                             </div>
+
                             <div class="answers__item">
                                 <div class="answers__item-question">
-                                    What if I don't want to lock my dice in place?
+                                    <a class="collapse-toggle" data-collapse data-group="accordion" href="#what_if_i_dont_want_to_lock_my_dice_in_place">
+                                        What if I don't want to lock my dice in place?
+                                        <span class="colapse-btn collapse-text-show">+</span>
+                                        <span class="colapse-btn collapse-text-hide">-</span>
+                                    </a>
                                 </div>
-                                <div class="answers__item-answer">
-                                    We have produced lids that don't lock. We're still finding a way to distribute them since Crowd Supply was unable to offer them.
+                                <div class="collapse" id="what_if_i_dont_want_to_lock_my_dice_in_place">
+                                    <div class="answers__item-answer">
+                                        We have produced lids that don't lock. 
+                                        We're still finding a way to distribute them since Crowd Supply was unable to offer them.
+                                    </div>
                                 </div>
                             </div>
+
                             <div class="answers__item">
                                 <div class="answers__item-question">
-                                    Can I create replacement parts with a 3D printer?
+                                    <a class="collapse-toggle" data-collapse data-group="accordion" href="#can_i_create_replacement_parts_with_a_3d_printer">
+                                        Can I create replacement parts with a 3D printer?
+                                        <span class="colapse-btn collapse-text-show">+</span>
+                                        <span class="colapse-btn collapse-text-hide">-</span>
+                                    </a>
                                 </div>
-                                <div class="answers__item-answer">
-                                    We don't recommend creating replacement parts with a 3D printer.
-                                    In our prototyping, filament-based printers lacked sufficient precision.
-                                    SLA printers were precise enough to create reasonable replicas that can hold dice, but the latches to hold the pieces together were not reliably flexible enough during assembly or strong enough after.
-                                    We can share latch-less reference designs for experimentation or personal use by those who recognize these limitations and concerns.
-                                    We have relied upon the expertise of our injection-mold manufacturer to customize the latches to their materials and manufacturing process, and their customizations are not ours to share.
+                                <div class="collapse" id="can_i_create_replacement_parts_with_a_3d_printer">
+                                    <div class="answers__item-answer">
+                                        We don't recommend creating replacement parts with a 3D printer.
+                                        In our prototyping, filament-based printers lacked sufficient precision.
+                                        SLA printers were precise enough to create reasonable replicas that can hold dice, but the latches to hold the pieces together were not reliably flexible enough during assembly or strong enough after.
+                                        We can share latch-less reference designs for experimentation or personal use by those who recognize these limitations and concerns.
+                                        We have relied upon the expertise of our injection-mold manufacturer to customize the latches to their materials and manufacturing process, and their customizations are not ours to share.
+                                    </div>
                                 </div>
                             </div>
+
                             <div class="answers__item">
                                 <div class="answers__item-question">
-                                    Can I print an image DiceKey?
+                                    <a class="collapse-toggle" data-collapse data-group="accordion" href="#can_i_print_my_dicekey">
+                                        Can I print my DiceKey?
+                                        <span class="colapse-btn collapse-text-show">+</span>
+                                        <span class="colapse-btn collapse-text-hide">-</span>
+                                    </a>
                                 </div>
-                                <div class="answers__item-answer">
-                                    You could, but that could be risky your printer is not properly secured or the network you use to connect to it is vulnerable. 
-                                    Stickeys allow you to replicate your DiceKey without relying on a printer to be secure.
+                                <div class="collapse" id="can_i_print_my_dicekey">
+                                    <div class="answers__item-answer">
+                                        You could, but that could be risky your printer is not properly secured or the network you use to connect to it is vulnerable.
+                                        Stickeys allow you to replicate your DiceKey without relying on a printer to be secure.
+                                    </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
     <footer class="footer">
         <div class="container">
@@ -280,7 +443,10 @@
         </div>
     </footer>
 
-
+    <script src="../js/faq.js"></script>
+    <script>
+        houdini.init();
+    </script>
     <script src="../js/main.min.js"></script>
 </body>
 

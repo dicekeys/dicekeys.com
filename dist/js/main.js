@@ -84,9 +84,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 item.parentNode.classList.toggle('active');
             })
         )
-        document.querySelectorAll('.answers__item-question').forEach((item) =>
-            item.addEventListener('click', () => item.parentNode.classList.toggle('active'))
-        )
+        // document.querySelectorAll('.answers__item-question').forEach((item) =>
+        //     item.addEventListener('click', () => item.parentNode.classList.toggle('active'))
+        // )
     };
 
     function pageSequrity() { };
