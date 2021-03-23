@@ -441,35 +441,8 @@
     .download__content{
         flex-direction: column-reverse;
     }
-    .download__description {
-        display: flex;
-        flex-direction: column;
-        max-width: 600px;
-        .mobile-applications {
-            flex-wrap: wrap;
-            order: -1;
-            padding-bottom: 50px;
-            padding-top: 0;
-            .mobile-applications-item{
-                height: auto;
-                svg{
-                    width: 200px;
-                }
-            }
-        }
-    }
-    .download__description-text,
-    .download__description-link{
-        display: none;
-    }
     .download__img{
         display: none;
-    }
-    .download__description-devices-note {
-        display: block;
-        text-align: center;
-        font-size: 24px;
-        line-height: 36px;
     }
     .order__content{
         flex-direction: column;

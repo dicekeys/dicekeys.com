@@ -1186,22 +1186,24 @@
 }
 
 .download__description{
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
     font-size: 36px;
-    color: #313A5A;
     line-height: 48px;
-}
-
-.download__description-link{
-    font-weight: 600;
-    a:hover{
-        text-decoration: underline;
-    }
+    color: #313A5A;
 }
 
 .download__description-devices-note {
-    display: none;
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    line-height: 36px;
     a{
         font-weight: 500;
+        &:hover{
+            text-decoration: underline;
+        }
     }
 }
 
@@ -1234,6 +1236,21 @@
 
 .mobile-applications-item{
     height: 40px;
+}
+
+.download__description {
+    .mobile-applications {
+        flex-wrap: wrap;
+        order: -1;
+        padding-bottom: 50px;
+        padding-top: 0;
+        .mobile-applications-item{
+            height: auto;
+            svg{
+                width: 200px;
+            }
+        }
+    }
 }
 
 .order__content {
