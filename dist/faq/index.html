@@ -172,19 +172,55 @@
 
 							<div class="answers__item">
 								<div class="answers__item-question">
-									<a class="collapse-toggle" data-collapse data-group="accordion" href="#why_do_generated_passwords_in_that_unusual_format">
+									<a class="collapse-toggle" data-collapse data-group="accordion" href="#what_are_recipes">
 										What is a recipe and why would I save it?
 										<span class="colapse-btn collapse-text-show">+</span>
 										<span class="colapse-btn collapse-text-hide">-</span>
 									</a>
 								</div>
-								<div class="collapse" id="why_do_generated_passwords_in_that_unusual_format">
+								<div class="collapse" id="what_are_recipes">
 									<div class="answers__item-answer">
-										Some systems require passwords that have uppercase, lowercase, digits, and symbols, even though this won't improve security for the passwords we generate.
-										<br/>
-										To meet these requirements, we start all passwords with a number of words that will follow, separate words with a dash, and use uppercase for the first character of the first word.  We considered a variety of ways to achieve the goal and this one was the most popular with our beta users.
-										<br/>
-										We use a dictionary of 512 words that are sufficiently different from each other that, if you mistake a mistake writing them down, you should be able to identify the mistake by looking at the list of valid words.
+										<p>
+										The app uses recipes to turn your DiceKey into passwords, seeds, keys, and other secrets.
+										It combines the recipe with your DiceKey using what is known as a one-way function.
+										The one-way prevents someone who you share a generated secret with from learning the DiceKey you used to generate that secret.
+										Even the tiniest change to your DiceKey or recipe will completely change the secret, so you will need both to re-generate more secrets in the future.
+										</p><p style="margin-top: 1rem;">
+										Because recipes are useless without your DiceKey, your recipe doesn't need to be kept secret.
+										You can save it in the app and not worry that someone can access it, so long as they don't have your DiceKey.
+										Unlike your DiceKey, your recipe will not be stored anywhere permanent and will be lost if you lose the device with the app in which your recipe is saved.
+										That's why we try to encourage you to use very simple recipes that are easy to reproduce.										
+										</p><p style="margin-top: 1rem;">
+										For example, if you need a password for your password manager or a major email provider, we probably already have a built-in recipe for you.
+										
+										If not, you can create a recipe just by pasting the URL or domain name of the site or app you need secrets for.
+										
+										You can add a sequence number if you need more than one recipe for the same application,
+										but we recommend you only use numbers you can count on your fingers so that you can try them all 
+										if you forget which one you needed.
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="answers__item">
+								<div class="answers__item-question">
+									<a class="collapse-toggle" data-collapse data-group="accordion" href="#what_if_i_lose_the_app">
+										What happens if I lose the device with my DiceKeys app?
+										<span class="colapse-btn collapse-text-show">+</span>
+										<span class="colapse-btn collapse-text-hide">-</span>
+									</a>
+								</div>
+								<div class="collapse" id="what_if_i_lose_the_app">
+									<div class="answers__item-answer">
+										<p>
+										Your app is just a tool for using your DiceKey.
+										You can get a new device, download the app, load in your DiceKey from its physical form, and be no worse off.
+										</p><p style="margin-top: 1rem;">
+										The only data you will lose are any recipes you have saved (see the above question about recipes).
+										In most cases, re-generating a recipe should be as simple as picking from the list of built-in recipes
+										or copying the URL or domain name of the site you need a password or secret for into the recipe builder.
+										</p>
 									</div>
 								</div>
 							</div>
@@ -192,7 +228,7 @@
 							<div class="answers__item">
 								<div class="answers__item-question">
 									<a class="collapse-toggle" data-collapse data-group="accordion" href="#why_do_generated_passwords_in_that_unusual_format">
-										Why do generated passwords use that unusual format?
+										Why does the app generate passwords use that unusual format?
 										<span class="colapse-btn collapse-text-show">+</span>
 										<span class="colapse-btn collapse-text-hide">-</span>
 									</a>
