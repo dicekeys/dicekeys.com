@@ -243,6 +243,40 @@
 									</div>
 								</div>
 							</div>
+							
+							<div class="answers__item">
+								<div class="answers__item-question">
+									<a class="collapse-toggle" data-collapse data-group="accordion" href="#dictionary_words">
+										Are passwords built from 512 dictionary words vulnerable to a dictionary attack?
+										<span class="colapse-btn collapse-text-show">+</span>
+										<span class="colapse-btn collapse-text-hide">-</span>
+									</a>
+								</div>
+								<div class="collapse" id="dictionary_words">
+									<div class="answers__item-answer">
+										In short, no.  A dictionary attack is one in which an attacker tests a dictionary of possible passwords to see if any is correct, sometimes adding variations to these words.
+										<br/>
+										<br/>
+										If your password is a single dictionary word from a dictionary of 512 passwords, it would indeed be vulnerable to an attack requiring at most 512 guesses (256 on average).
+										Such a password has 2<sup>9</sup> possible values, and so is said to have 9 bits of strength.
+										<br/>
+										<br/>
+										The number of passwords that result from combining two such words is 512&times;512, or 262,144 (18 bits).
+										<br/>
+										<br/>
+										With three words, 512&times;512&times;512, or 134,217,728 (27 bits). This growth is exponential in the number of words: 512<sup>n</sup> or 2<sup>9&times;n</sup>!
+										<br/>
+										<br/>
+										So, our fifteen word passwords can create 2<sup>9&times;15</sup>, or 2<sup>135</sup> possible combinations. That 135-bit strength is stronger than many cryptographic keys!
+										<br/>
+										<br/>
+										By comparison, a random 15-character passwords with 26 possible uppercase characters, 26 possible lowercase characters, 10 digits to choose from, and special characters
+										(let's say 4 common ones, for an even 64 total characters to choose from)
+										would have 90 bits of strength.
+										It would also be much harder to read than a password made of words.
+									</div>
+								</div>
+							</div>
 
 							<div class="answers__item">
 								<div class="answers__item-question">
