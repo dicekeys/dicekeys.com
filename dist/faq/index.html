@@ -157,6 +157,39 @@
 
 							<div class="answers__item">
 								<div class="answers__item-question">
+									<a class="collapse-toggle" data-collapse data-group="accordion" href="#reading_without_app">
+										Can I use my DiceKey without the app?
+										<span class="colapse-btn collapse-text-show">+</span>
+										<span class="colapse-btn collapse-text-hide">-</span>
+									</a>
+								</div>
+								<div class="collapse" id="reading_without_app">
+									<div class="answers__item-answer">
+										<p>
+											You can read your DiceKey without the app.
+											Before performing cryptographic operations seeded by your DiceKey,
+											the app turns it into a 75-character string, with three characters representing each exposed face (die or sticker).
+											The three characters are the capital letter and digit that appear on the face, followed by the orientation encoded
+											as a lowercase letter &lsquo;r&rsquo; (top facing top, or upright), &lsquo;r&rsquo; (facing right, or rotated 90 degrees clockwise),
+											&lsquo;b&rsquo; (facing bottom, or rotated 180 degrees), or
+											&lsquo;b&rsquo; (facing left, or rotated 270 degrees clockwise).
+											</p><p style="margin-top: 1rem;">
+												However, you won't be able to generate secrets entirely by hand.
+												To generate password, keys, and other secrets, the DiceKeys App uses an open-source <a href="https://github.com/dicekeys/seeded-crypto">cryptographic library</a>
+												to turn that 75-character string into secrets that don't reveal the DiceKey.
+												That library is portable, open-source, and can be used independently of the app.
+												You cannot generate secrets from your DiceKey by hand because there are no known functions for doing so that are both reliably computable by humans and considered secure by cryptographers.
+											</p><p style="margin-top: 1rem;">
+												Before performing cryptographic operations, the app rotates your DiceKey so that the top left face is the one with the letter
+												earliest in the alphabet.  For more information, see <a href="https://dicekeys.github.io/seeded-crypto/introduction.html">the specification</a>.
+											</p><p style="margin-top: 1rem;">
+											</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="answers__item">
+								<div class="answers__item-question">
 									<a class="collapse-toggle" data-collapse data-group="accordion" href="#is_there_a_dicekeys_app_for_windows">
 										Is there a DiceKeys app for Windows?
 										<span class="colapse-btn collapse-text-show">+</span>
