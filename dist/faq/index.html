@@ -118,7 +118,7 @@
 								</div>
 								<div class="collapse" id="do_dicekeys_work_with_any_fido_webauthn_key">
 									<div class="answers__item-answer">
-										No, but any company that makes FIDO2/WebAuthN security keys can adopt our our <a href="https://github.com/dicekeys/seeding-webauthn">open standard for seeding security keys.</a>
+										No, but any company that makes FIDO2/WebAuthN security keys can adopt our <a href="https://github.com/dicekeys/seeding-webauthn">open standard for seeding security keys</a>.
 										For now, you will need choose from those SoloKeys with firmware that is DiceKeys compatible with this standard, such as the ones shipped as part of our Crowd Supply campaign with the SoloKeys team,
 										or the v1 hacker editions upgraded with firmware from <a href="https://github.com/conorpp/solo-dicekeys/releases/tag/5.0.0">https://github.com/conorpp/solo-dicekeys/releases/tag/5.0.0</a>.
 									</div>
@@ -200,19 +200,40 @@
 										It combines the recipe with your DiceKey using what is known as a one-way function.
 										The one-way prevents someone who you share a generated secret with from learning the DiceKey you used to generate that secret.
 										Even the tiniest change to your DiceKey or recipe will completely change the secret, so you will need both to re-generate more secrets in the future.
-										</p><p style="margin-top: 1rem;">
+										</p>
+										
+										<p style="margin-top: 1rem;">
 										Because recipes are useless without your DiceKey, your recipe doesn't need to be kept secret.
 										You can save it in the app and not worry that someone can access it, so long as they don't have your DiceKey.
 										Unlike your DiceKey, your recipe will not be stored anywhere permanent and will be lost if you lose the device with the app in which your recipe is saved.
-										That's why we try to encourage you to use very simple recipes that are easy to reproduce.										
-										</p><p style="margin-top: 1rem;">
+										That's why we try to encourage you to use very simple recipes that are easy to reproduce.
+										This is also why we provided the ability to export your saved recipes to the storage of your mobile devices with our native apps (currently Android only).
+										</p>
+										
+										<p style="margin-top: 1rem;">
 										For example, if you need a password for your password manager or a major email provider, we probably already have a built-in recipe for you.
-										
 										If not, you can create a recipe just by pasting the URL or domain name of the site or app you need secrets for.
-										
 										You can add a sequence number if you need more than one recipe for the same application,
 										but we recommend you only use numbers you can count on your fingers so that you can try them all 
 										if you forget which one you needed.
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="answers__item">
+								<div class="answers__item-question">
+									<a class="collapse-toggle" data-collapse data-group="accordion" href="#how_to_export_recipes">
+										On the Android DiceKeys app, how do I export my recipes for safe-keeping?
+										<span class="colapse-btn collapse-text-show">+</span>
+										<span class="colapse-btn collapse-text-hide">-</span>
+									</a>
+								</div>
+								<div class="collapse" id="how_to_export_recipes">
+									<div class="answers__item-answer">
+										<p>
+										The Android DiceKey app (version 1.08) offers a "Backup" and "Restore" function for your Recipes. You can find it under "Preferences > Recipes". The "Preferences" menu can be found at the top right as the 3-vertical-dots menu on the home screen.
+										This process creates a file which you can keep somewhere safe. Preferably not on the same device for obvious reasons.
 										</p>
 									</div>
 								</div>
@@ -243,7 +264,7 @@
 							<div class="answers__item">
 								<div class="answers__item-question">
 									<a class="collapse-toggle" data-collapse data-group="accordion" href="#why_do_generated_passwords_in_that_unusual_format">
-										Why does the app generate passwords use that unusual format?
+										Why does the app generated passwords use that unusual format?
 										<span class="colapse-btn collapse-text-show">+</span>
 										<span class="colapse-btn collapse-text-hide">-</span>
 									</a>
@@ -254,7 +275,7 @@
 										<br/>
 										To meet these requirements, we start all passwords with a number of words that will follow, separate words with a dash, and use uppercase for the first character of the first word.  We considered a variety of ways to achieve the goal and this one was the most popular with our beta users.
 										<br/>
-										We use a dictionary of 512 words that are sufficiently different from each other that, if you mistake a mistake writing them down, you should be able to identify the mistake by looking at the list of valid words.
+										We use a dictionary of 512 words that are sufficiently different from each other that, if you make a mistake writing them down, you should be able to identify the mistake by looking at the list of valid words.
 									</div>
 								</div>
 							</div>
